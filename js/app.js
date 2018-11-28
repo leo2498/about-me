@@ -17,11 +17,10 @@
 //   run this code instead
 // }
 
-var whatGuess = prompt('What city do I come from?');
-console.log('your answer is ' + whatGuess);
+var whatGuess = prompt('What city do I come from?'); 
+console.log('your answer is ' + whatGuess );
 
-if(whatGuess === 'LA' || whatGuess === 'la' || whatGuess === 'La' || whatGuess === 'Los Angeles' || whatGuess === 'Los angeles' || whatGuess
-=== 'los angles') {
+if(whatGuess.toUpperCase === 'La' || whatGuess.toUpperCase === 'Los angeles') {
   alert('That is correct!');
 } else {
   alert('That is incorrect!');
