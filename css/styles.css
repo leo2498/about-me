@@ -1,7 +1,6 @@
-body {
-  background-color: greenyellow;
+body {background: beige url(https://media.giphy.com/media/xUA7aTaAgUK1qcv1WE/giphy.gif); 
 }
 h1 {
-  font-size: 48px;
-  color: black;
+  font-size: 48px; text-align: center;
+  color: white;
 }
