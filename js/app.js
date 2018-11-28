@@ -71,3 +71,25 @@ if(doI === 'Y' || doI === 'y' || doI === 'yes' || doI === 'Yes' || doI === 'YES'
   alert('Please follow directions and answer with Yes or No');
 }
 
+var haveI = prompt('have i taken a nap during class? Please answer with Y or N');
+console.log('Have i fallen asleep in class ' + haveI);
+
+if(haveI === 'Y' || haveI === 'y' ) {
+  alert('Nope, althought I\'ve almost have after lecture.'); 
+} else if(haveI === 'N' || haveI === 'n') {
+  alert('You are right! even though there has been some close calls');
+} else {
+  alert('Please respond with Y or N');
+}
+
+
+var didI = prompt('Have i ever glued my hand onto something? Please answer with Y or N.');
+console.log('Have i glued my hand on anything ' + didI );
+
+if(didI === 'Y' || haveI === 'y') {
+  alert('You are absolutely right! '); 
+  } else if(didI === "N" || didI === 'n') {
+    alert('I wish you were wrong but its the truth sadly.');
+  } else { 
+    alert('Please answer with Y or N')
+}
