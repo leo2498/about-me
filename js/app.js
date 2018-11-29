@@ -1,22 +1,5 @@
 'use strict';
 
-// CONDITIONAL LOGIC
-// if/else
-
-// if(condition) {
-//   run this line of code
-// } else {
-//   run this code instead
-// }
-
-// if(condition) {
-//   run this line of code
-// } else if (condition 2) {
-//   run this code
-// } else {
-//   run this code instead
-// }
-
 var whatGuess = prompt('What city do I come from?').toLowerCase(); 
 console.log('your answer is ' + whatGuess );
 
@@ -85,10 +68,50 @@ if(haveI === 'yes' || haveI === 'y' ) {
 var didI = prompt('Have i ever glued my hand onto something? Please answer with Y or N.').toLowerCase();
 console.log('Have i glued my hand on anything ' + didI );
 
-if(didI === 'yes' || haveI === 'y') {
+if(didI === 'yes' || didI === 'y') {
   alert('You are absolutely right! '); 
   } else if(didI === "no" || didI === 'n') {
     alert('I wish you were wrong but its the truth sadly.');
   } else { 
     alert('Please answer with Y or N')
 }
+
+var speedingTickets = 4 ;
+var guessesRemaining = 4 ;
+
+while (guessesRemaining > 0){
+  var howManySpeedingTickets = prompt('Can you guess how many speeding tickets I\'ve gotten?');
+  howManySpeedingTickets = parseInt(howManySpeedingTickets);
+  console.log('speedingTickets: ' + howManySpeedingTickets);
+
+  if (howManySpeedingTickets === speedingTickets) {
+    alert('You are correct! Not that im proud of them however.');
+    console.log('Guess Correctly');
+    answersCorrect++;
+    break;
+  } else if (howManySpeedingTickets < speedingTickets) {
+    alert('Give it another shot, higher this time');
+    console.log('Incorrect, Try a higher number' + howManySpeedingTickets);
+    guessesRemaining--;
+  } else if (howManySpeedingTickets < speedingTickets) {
+    alert('Givee it another shot, lower this time. I\'ve been caught but not that many times.')
+    console.log('Incorrect, Try a lower number.' + howManySpeedingTickets)
+    guessesRemaining--;
+  }
+} 
+
+if (guessesRemaining === 0) {
+  alert('Sadly you failed');
+  console.log('Finally incorrect');
+}  
+
+var favoriteCarModels = ['Camaro', 'Corvette', 'Audi Rs7', 'Challenger'];
+var secondGuessRemaining = 5;  
+
+  console.log(favoriteCarModels[0]);
+  console.log(favoriteCarModels[1]);
+  console.log(favoriteCarModels[2]);
+  console.log(favoriteCarModels[3]);
+
+  var favoriteCarModels = prompt('Can you guess one of my favorite Cars?');
+  
