@@ -155,7 +155,23 @@ function questionNine() {
     console.log();
     secondGuessRemaining--;
     
-    for var 
-
-
+    for (var i = 0;  i < favoriteCarModels.length; i++) {
+      if (myCars === favoriteCarModels[i] ) {
+        alert('Nice! you got it correct');
+        secondGuessRemaining = -1;
+        answersCorrect++;
+        break;
+      }
+    }
+    if(secondGuessRemaining > 0) {
+      alert('Wrong, please try again.');
+    }
   }
+
+  if(answersCorrect ===0){
+    alert('Sorry, you failed to guess my answers.');
+  }else if(answersCorrect > 3 &&  answersCorrect < 5) {
+    alert('Congradulations! ' + answersCorrect + 'out of 5 correct hopefully when my insurance goes down and i could afford a Camaro I\'ll take you to the track with me!');
+  }
+  }
+questionEight();
